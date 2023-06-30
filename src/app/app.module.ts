@@ -6,7 +6,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { AppRoutingModule } from './app-routing.module';
 import { MatSortModule } from '@angular/material/sort';
-
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CartComponent } from './cart/cart.component';
@@ -17,8 +16,6 @@ import { ManageCustomersComponent } from './manage-customers/manage-customers.co
 import { ManagePurchaseComponent } from './manage-purchase/manage-purchase.component';
 import { PaymentGatewayComponent } from './payment-gateway/payment-gateway.component';
 import { OrderSummaryComponent } from './order-summary/order-summary.component';
-
-
 
 
 @NgModule({

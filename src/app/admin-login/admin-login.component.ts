@@ -34,15 +34,20 @@ export class AdminLoginComponent implements OnInit {
       return
     }
 
+    
+      
+      
     this.adminService.adminLogin(this.loginData).subscribe(data=>{
+      console.log(data); 
       this.auth=data;
       if(this.auth==true){
         this.logService.sendAdmin(this.loginData.username);
         this.router.navigate(['/adminDashboard']);
       }else{
-        this.error="Username or password incorrect"
+        this.error="Username or password incorrect";
+        console.log(this.error);
       }
     })
-
+    
   }
 }

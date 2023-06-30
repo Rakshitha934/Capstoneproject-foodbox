@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class CustomerService {
-  private baseURL="http://localhost:8084/customers";
+  private baseURL="http://localhost:8080/customers";
   constructor(private httpClient:HttpClient) { }
 
   addCustomer(customer:Customer):Observable<Object>{

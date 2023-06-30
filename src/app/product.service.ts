@@ -8,8 +8,8 @@ import { BehaviorSubject,Observable } from 'rxjs';
 })
 export class ProductService {
   public login = new BehaviorSubject<any>([]);
-  private baseURL = "http://localhost:8084/products";
-  private adminURL= "http://localhost:8084/AdminProducts";
+  private baseURL = "http://localhost:8080/products";
+  private adminURL= "http://localhost:8080/AdminProducts";
   constructor(private httpClient: HttpClient) { }
   
   getLogin(){
